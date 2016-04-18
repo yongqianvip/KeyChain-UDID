@@ -13,6 +13,7 @@
 		5B1FFAAF1CC4D11300DED2B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FFAAD1CC4D11300DED2B0 /* Main.storyboard */; };
 		5B1FFAB11CC4D11300DED2B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FFAB01CC4D11300DED2B0 /* Assets.xcassets */; };
 		5B1FFAB41CC4D11300DED2B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B1FFAB21CC4D11300DED2B0 /* LaunchScreen.storyboard */; };
+		5B1FFABE1CC4D46700DED2B0 /* YYQKeyChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1FFABD1CC4D46700DED2B0 /* YYQKeyChain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		5B1FFAB01CC4D11300DED2B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B1FFAB31CC4D11300DED2B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B1FFAB51CC4D11300DED2B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B1FFABC1CC4D46700DED2B0 /* YYQKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYQKeyChain.h; path = Util/YYQKeyChain.h; sourceTree = "<group>"; };
+		5B1FFABD1CC4D46700DED2B0 /* YYQKeyChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YYQKeyChain.m; path = Util/YYQKeyChain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		5B1FFAA31CC4D11300DED2B0 /* KeyChain-UDID */ = {
 			isa = PBXGroup;
 			children = (
+				5B1FFABB1CC4D3A500DED2B0 /* Util */,
 				5B1FFAA71CC4D11300DED2B0 /* AppDelegate.h */,
 				5B1FFAA81CC4D11300DED2B0 /* AppDelegate.m */,
 				5B1FFAAA1CC4D11300DED2B0 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				5B1FFAA51CC4D11300DED2B0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B1FFABB1CC4D3A500DED2B0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5B1FFABC1CC4D46700DED2B0 /* YYQKeyChain.h */,
+				5B1FFABD1CC4D46700DED2B0 /* YYQKeyChain.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +165,7 @@
 				5B1FFAAC1CC4D11300DED2B0 /* ViewController.m in Sources */,
 				5B1FFAA91CC4D11300DED2B0 /* AppDelegate.m in Sources */,
 				5B1FFAA61CC4D11300DED2B0 /* main.m in Sources */,
+				5B1FFABE1CC4D46700DED2B0 /* YYQKeyChain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Wen Yun (EG5PXJHURJ)";
 				INFOPLIST_FILE = "KeyChain-UDID/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yyq.KeyChain-UDID";
@@ -300,6 +315,7 @@
 				5B1FFABA1CC4D11300DED2B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
